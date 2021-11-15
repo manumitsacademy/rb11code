@@ -1,0 +1,52 @@
+<html>
+	<head>
+		<title>Profile</title>
+		
+	</head>
+	<body>
+		
+		<form action="http://naistam.com/abc.php" 
+		method="GET" enctype="multipart">
+			
+			<label for="fn">First Name:</label>
+			<input type="text" name="fn" id="fn" required><br/>			
+			<label for="lname">Last Name:</label> 
+			<input type="text" name="ln" id="lname"><br/>
+			<label>Select Technologies you know:</label>
+			<br/>
+			<input type="checkbox" name="tech" value="node">Nodejs
+			<input type="checkbox" name="tech" value="ang">Angular
+			<input type="checkbox" name="tech" checked value="ajs">Angularjs
+			<input type="checkbox" name="tech" value="rjs">ReactJS
+			<br/>
+			<input type="radio" name="gender" checked value="male">Male
+			<input type="radio" name="gender" value="female">Female
+			<input type="radio" name="gender" value="others">Others			
+			<br/>
+			Date of Birth:<input type="date" value="2021-08-19" 
+			max="2021-08-31" min="2021-06-01" name="dob">			
+			<br>
+			Email:<input type="email" name="mailid">
+			<br/>
+			Select your Pic:<input type="file" name="profilepic">
+			<br/>
+			Enter Your Age:<input type="number" max="200" name="age">
+			<br/>
+			Enter Your Password<input type="password" name="pwd">
+			<br/>
+			<textarea rows="2"></textarea>			
+			<br/>
+			<select name="ctry" multiple size="2">
+				<option value="ind">India</option>
+				<option value="srl" selected>Srilanka</option>
+				<option value="pak">Pakistan</option>
+				<option value="ban">Bangladesh</option>
+				<option value="nep" selected>Nepal</option>
+			</select>
+			<br/>
+			<input value="Something" type="submit">
+			<button>Save</button>
+		</form>
+		
+	</body>
+</html>

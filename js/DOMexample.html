@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <style>
+           p{
+               background-color: pink;
+           }
+        </style>
+    </head>
+    <body>
+        <input type="text">
+        <button onclick="abc()">my button</button>
+        <h1>Hello World</h1>
+        <h3>Praveen Gubbala</h3>
+        <h1>Gandhi Garu</h1>
+        <p>
+            b la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla hb la h bla h
+        </p>
+        <p class="abc">
+            aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5aha netflix sonyliv prime zee5
+        </p>
+        <p class="abc">
+            ipl ccl india pakistan nepal butanipl ccl india pakistan nepal butanipl ccl india pakistan nepal butanipl ccl india pakistan nepal butanipl ccl india pakistan nepal butanipl ccl india pakistan nepal butanipl ccl india pakistan nepal butan
+        </p>
+        <script>
+            function abc(){
+                alert("You clicked me rey")
+            }
+            var x = document.getElementsByTagName("p");
+            for(var i = 0;i<=x.length-1;i++){
+                x[i].style.color='green'
+            }
+
+            var y = document.getElementsByClassName("abc");
+            console.log(y);
+
+            var h = document.querySelectorAll("h1");
+            h.forEach(function(element,i){
+                element.style.border="4px dashed";
+                element.style.backgroundColor='orange'
+            })
+        </script>
+    </body>
+</html>

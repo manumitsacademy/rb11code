@@ -1,0 +1,18 @@
+
+<html>
+    <script>
+        class Student{
+            firstname;
+            lastname;        
+            constructor(fn,ln){
+                this.firstname = fn;
+                this.lastname=ln;
+            }            
+            getFullName(){
+                    console.log(this.firstname.toUpperCase()+this.lastname.toUpperCase())                            
+            }
+        }
+        var st1 = new Student("praveen","gubbala");
+        st1.getFullName();
+    </script>
+</html>

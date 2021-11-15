@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div id="d1">
+
+        </div>
+        <script>
+            var employees = [
+                {
+                    "name": "Deepika Padukone",
+                    "email": "deepu@gmail.com",
+                    "id": "12",
+                    "pic": "https://vlrit.com/mpa/images/Deepika.png"
+                },
+                {
+                    "name": "Kendall Jenner",
+                    "email": "kj@gmail.com",
+                    "id": "13",
+                    "pic": "https://vlrit.com/mpa/images/Kendall.png"
+                },
+                {
+                    "name": "Bradley Cooper",
+                    "email": "bc@gmail.com",
+                    "id": "14",
+                    "pic": "https://vlrit.com/mpa/images/Bradley.png"
+                },
+                {
+                    "name": "Angelina-Jolie",
+                    "email": "aj@gmail.com",
+                    "id": "15",
+                    "pic": "https://vlrit.com/mpa/images/Angelina.png"
+                }
+            ]
+            for(var i=0;i<=employees.length-1;i++){
+                var newdiv = document.createElement("div");
+                var newh1 = document.createElement('h1');
+                newh1.innerHTML=employees[i].name;
+                newdiv.appendChild(newh1);                
+                var newimg = document.createElement("img");
+                newimg.src = employees[i].pic;
+                newimg.style.width="100px";
+                newdiv.appendChild(newimg);
+                newdiv.classList.add("border","border-danger","m-3","p-3")
+                document.getElementById("d1").appendChild(newdiv)
+            }
+        </script>
+    </body>
+</html>

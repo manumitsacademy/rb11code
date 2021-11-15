@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+		<script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+		<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    </head>
+    <body>
+        <div id="d1">
+
+        </div>
+        <script type="text/babel">
+            var employees = [
+                {
+                    "name": "Deepika Padukone",
+                    "email": "deepu@gmail.com",
+                    "id": "12",
+                    "pic": "https://vlrit.com/mpa/images/Deepika.png"
+                },
+                {
+                    "name": "Kendall Jenner",
+                    "email": "kj@gmail.com",
+                    "id": "13",
+                    "pic": "https://vlrit.com/mpa/images/Kendall.png"
+                },
+                {
+                    "name": "Bradley Cooper",
+                    "email": "bc@gmail.com",
+                    "id": "14",
+                    "pic": "https://vlrit.com/mpa/images/Bradley.png"
+                },
+                {
+                    "name": "Angelina-Jolie",
+                    "email": "aj@gmail.com",
+                    "id": "15",
+                    "pic": "https://vlrit.com/mpa/images/Angelina.png"
+                }
+            ]
+           
+            var x = employees.map((e,i)=>{
+                        return (
+                            <div class="border border-danger m-3 p-3">
+                                <h1>{e.name}</h1>
+                                <img src={e.pic} width="100px"/>
+                            </div>
+                        )
+                    })
+            
+            ReactDOM.render(x,document.getElementById("d1"))
+        </script>
+    </body>
+</html>

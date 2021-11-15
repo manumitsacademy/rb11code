@@ -1,0 +1,23 @@
+<html>
+    <script>
+		function div(a,b,cb){
+			if(b===0){
+				cb(true,null)
+			}
+			else{
+				cb(false,a/b);
+			}
+		}
+
+		div(13,0,function(err,res){
+			if(err){
+				console.log("Denominator should not be zero")
+			}
+			else{
+				console.log(res)
+			}
+		})//first class function
+		
+    </script>
+</html>
+

@@ -1,0 +1,37 @@
+
+<html>
+    <script>
+        class Student{
+            firstname;
+            lastname;            
+            dob;//properties
+            constructor(fn,ln,d){
+                this.firstname = fn;
+                this.lastname=ln;
+                this.dob=d;
+            }
+            getAge(){
+                //logic
+                var ct = Date.now();
+                var bd = new Date(this.dob);
+                var bt = bd.getTime();
+                console.log((ct-bt)/(1000*60*60*24*365))
+            }//methods
+            getFullName(){
+                setTimeout(()=>{
+                    console.log(this.firstname.toUpperCase()+this.lastname.toLowerCase())
+                },1000)
+                
+            }
+
+        }
+        var st1 = new Student("praveen","gubbala",'04-19-1983');
+        var st2 = new Student("rahul","reddy","09-28-1999");
+
+        st1.getAge();
+        st2.getAge();
+
+        st1.getFullName();
+        st2.getFullName();
+    </script>
+</html>

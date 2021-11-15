@@ -1,0 +1,27 @@
+<html>
+	<script>
+		function add(x=0,y=0,z=0){
+			return x+y+z;
+		}
+		
+		var res = add(12,34,45);
+		console.log(res);
+		
+		var res2 = add(34,56);
+		console.log(res2)
+		
+		function mul(...x){
+			var result = 1;
+			for(var i=0;i<=x.length-1;i++){
+				result=result*x[i]
+			}
+			return result
+		}
+		
+		var res4 = mul(11,22,5);
+		console.log(res4)
+		
+		var res6 = mul(11,22,5,88,44,23);
+		console.log(res6)
+	</script>
+</html>

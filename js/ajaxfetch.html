@@ -1,0 +1,16 @@
+<html>
+    <body>
+        
+        <script>
+           
+           
+            fetch("https://vlrit.com/mpa/getActors.php")
+            .then(function(res){
+                res.json().then(function(data){
+                    console.log(data)
+                })
+            })
+
+        </script>
+    </body>
+</html>

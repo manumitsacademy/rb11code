@@ -1,0 +1,24 @@
+<html>
+    <script>
+        var k = 340;
+        
+        function abc(){
+            var a = 100;
+            function xyz(){
+                a=a+124;//a = 472+124;
+                console.log(a);//596
+            }
+            return xyz;
+        }
+
+        var foo = abc();
+        
+        foo();
+        foo();
+        foo();
+
+        var foo2 = abc();
+        foo2();
+        foo();
+    </script>
+</html>

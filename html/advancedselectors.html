@@ -1,0 +1,75 @@
+<html>
+	<head>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,200;1,400&display=swap" rel="stylesheet">
+		<style>
+		
+			*{
+				font-family: Urbanist;
+			}
+			li:nth-of-type(3n+1){
+				background-color:#00aa00;
+			}
+			li:nth-of-type(3n+2){
+				background-color:#005500;
+			}
+			li:nth-of-type(3n+3){
+				background-color:#001100;
+			}
+			li~h2{
+				color:red;
+			}
+			button[disabled]{
+				cursor:zoom-in;
+			}
+			#searchbox:focus{
+				width:200px;				
+			}
+		</style>
+	</head>
+	<body>
+	
+		<button disabled>Hello</button>
+		
+		<input type="text" id="searchbox">
+	
+		<ul>
+			<p>All Countries</p>
+			<h2>Lets understand + combinator</h2>
+			<li>
+				<h1>India</h1>
+				<h2>New Delhi</h2>
+				<p>
+					Lets understand the decendentsLets understand the decendentsLets understand the decendentsLets understand the decendents
+					<div>
+						Lets understand the decendentsLets understand the decendents
+						<h2>Praveen</h2>
+					</div>
+				</p>
+			</li>
+			<li>
+				<h1>Pakistan</h1>
+				<h2>Islamabad</h2>
+			</li>
+			<li>
+				<h1>Srilanka</h1>
+				<h2>Colombo</h2>
+			</li>
+			<li>
+				<h1>USA</h1>
+				<h2>Washington</h2>
+			</li>
+			<li>
+				<h1>England</h1>
+				<h2>London</h2>
+			</li>
+			<li>
+				<h1>France</h1>
+				<h2>Paris</h2>
+			</li>
+			<h2>Lets understand the decendents</h2>
+			<h2>Lets understand the ~ combinator in css3</h2>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+    <body>
+        
+        <script>
+            var http = new XMLHttpRequest();
+           
+            http.onloadend = function(){
+                console.log("onloadend",http.responseText)
+            }
+            
+            http.open("GET","https://restcountries.com/v2/all");
+            http.send();
+           
+
+        </script>
+    </body>
+</html>

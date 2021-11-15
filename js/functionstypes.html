@@ -1,0 +1,47 @@
+<html>
+    <script>
+
+        function add(x,y){
+			return x+y;
+		}//function decleration
+		
+		var sum = function(a,b){
+			return a+b;
+		}//function expressions//variable functions//function literals
+		
+		var res = sum(12,23);
+		console.log(res);//35
+		
+		var res2 = add(22,33);
+		console.log(res2)
+		
+		
+		var diff = function(x,y){
+			return x-y;
+		}
+		
+		var res3 = diff(45,6);
+		console.log(res3);
+		
+		var mul = function(a,b){
+			return a*b;
+		}
+		
+		var res4 = mul(22,33);
+		console.log(res4);						
+		
+		var rem = function(x,y){
+			return x%y;
+		}		
+		
+		var res5 = rem(34,5);
+		console.log(res5);
+		
+		(function(s){
+			console.log("HI",s)
+		})('srikanth');
+		
+		
+    </script>
+</html>
+

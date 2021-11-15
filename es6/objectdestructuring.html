@@ -1,0 +1,22 @@
+<html>
+    <script>
+        var mydetails={
+			firstname:'praveen',
+			lastname:'gubbala',
+			dob:'12-2-1989',
+			address:{
+				hno:'12-4/899-b456',
+				street:'kakanivariveedhi',
+				place:'guntur',
+				state:'andhrapradesh'
+			}
+		}
+		var clonedoj = {...mydetails}
+		var {firstname:fname,lastname:lname,address:{place}} = mydetails;
+		console.log(fname)
+		console.log(lname)
+		console.log(place)
+    </script>
+</html>
+
+shallow copy and deep copy

@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <style>
+
+        </style>
+    </head>
+    <body>
+        <ul id="d1">
+
+        </ul>
+        <script>
+            var wishlist = ['learn rocket science','play tabla','go for horse riding'];
+            for(var i=0;i<=wishlist.length-1;i++){
+                var newli = document.createElement("li");
+                newli.innerHTML = wishlist[i];
+                document.getElementById("d1").appendChild(newli);
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <style>
+          #d1{
+              width:300px;
+              height:200px;
+              background-color: lightsalmon;
+              border:1px solid red;
+              border-radius: 25px;
+          }
+          #d2{
+              width:300px;
+              height:200px;              
+              border:1px solid red;
+              border-radius: 100%;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="d1" onclick="abc(event)"></div>
+        <img id="d2" onclick="next(event)">
+        <button>Prev</button>
+        <button>Next</button>
+        <br>
+        <br>
+        <br>
+        <input type="text" onkeyup="handleInput(event)">
+        <h1 id="dd2"></h1>
+        <br>
+        <script>
+            function handleInput(e){
+                console.log(e.target.value)
+                document.getElementById("dd2").innerHTML = e.target.value;
+            }
+            var colors=['pink','lightgreen','indianred','blue','teal'];
+            var images=[
+                            'https://cdn.stocksnap.io/img-thumbs/960w/photographer-picture_RRDDRFSJCO.jpg',
+                            'https://cdn.stocksnap.io/img-thumbs/960w/photographer-picture_MMA5ZK4YEI.jpg',
+                            'https://cdn.stocksnap.io/img-thumbs/960w/person-smartphone_FXRFRU7UJX.jpg',
+                        ];
+            var i=0;
+            var j=0;
+            document.getElementById("d2").src=images[j];
+            function abc(e){
+                if(i===colors.length){
+                    i=0;
+                }
+                e.target.style.backgroundColor=colors[i];
+                i++;
+            }
+            function next(e){
+                if(j===images.length-1){
+                    j=-1;
+                }
+                j++;
+                document.getElementById("d2").src=images[j];                
+            }
+            
+        </script>
+    </body>
+</html>

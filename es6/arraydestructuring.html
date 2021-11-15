@@ -1,0 +1,30 @@
+<html>
+    <script>
+        var ar = [12,23,11,26,21];
+
+        var a = ar[0];
+        var b = ar[1];
+        var c = ar[2];
+
+        var [x,y,...z] = ar;
+        console.log(x);
+        console.log(y);
+        console.log(z);
+
+        //cloning array using spread operator
+
+        var br = [12,33,52,15,25];
+        var cr = br;
+        var dr = [...br];
+        br[2]='ravi';
+        console.log(cr);
+        console.log(br);
+        console.log(dr);
+
+    </script>
+</html>
+
+1. primitive 
+    number,string,boolean,undefined
+2. non primitive
+    objects,arrays
